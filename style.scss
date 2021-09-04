@@ -1,0 +1,521 @@
+@import url('https://fonts.google.com/specimen/Barlow');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+
+
+    $fontFrauncesWeights: 700;
+    $fontFrauncesFamily:'Fraunces';
+    $fontbarlowFamily:'Barlow';
+
+    $Softred: hsl(7, 99%, 70%);
+    $Yellow: hsl(51, 100%, 49%);
+    $Darkdesaturatedcyan : hsl(167, 40%, 24%); //(graphic design text):
+    $Darkblue : hsl(198, 62%, 26%);/*(photography text)*/
+    $Darkmoderatecyan : hsl(168, 34%, 41%); //(footer)
+
+
+
+    $Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    $Verydarkgrayishblue: hsl(213, 9%, 39%);
+    $Darkgrayishblue: hsl(232, 10%, 55%);
+    $Grayishblue: hsl(210, 4%, 67%);
+    $White: hsl(0, 0%, 100%);
+
+
+ *{
+     box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+ }
+ body,html{
+     scroll-behavior: smooth;
+ }
+ body{
+     font-family: $fontbarlowFamily;
+     font-size: 18px;
+    height: 100vh;
+    overflow-x: hidden;
+.container-fluid{
+    background: url('/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg') no-repeat center center /cover;
+    height: 100%;
+
+     .navbar{
+         width:100%;
+      
+        padding:0.5rem 3rem;
+         .container{
+        
+             display: flex;
+             padding:2rem;
+             justify-content: space-between;
+             align-items: center;
+             flex-wrap: wrap;
+                .navbar-toggler{
+                    padding:1rem;
+                    background: url('/sunnyside-agency-landing-page-main/images/icon-hamburger.svg') no-repeat center center;
+                    border: none;
+                    cursor: pointer;
+                    display: none;
+                   
+                        
+                        
+                 
+                }
+             .navbar-brand{
+                color:#fff;
+                text-decoration: none;
+                font-weight:bold;
+                font-size:2rem;
+             }
+             .navbar-nav{
+                 list-style-type: none;
+                    display: flex;
+
+                 .nav-item{
+                     margin:0 0.5rem;
+                    .nav-link{
+                        text-decoration: none;
+                        color:$White;
+                        font-family: $fontFrauncesFamily,sans-serif;
+                        
+                        
+                
+                    }
+                    .nav-link.active{
+                        background:#fff;
+                        padding:1rem 1.5rem; 
+                        border-radius: 30px;
+                        font-size: 16px;
+                        font-family: $fontbarlowFamily;
+                        font-weight: $fontFrauncesWeights;
+                        color:#000;
+                        text-transform: uppercase;
+                    }
+                 }
+              
+             }
+            
+         }
+     }
+
+     #main{
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         gap:4.5rem;
+         h1{
+             text-align: center;
+             font-size:4rem;
+             color:#fff;
+             font-family: $fontFrauncesFamily;
+            font-weight: bold;
+             margin-top:5rem;
+             letter-spacing: 3px;
+           
+         }
+     }
+    }
+    .grid-container{
+       
+        .row{
+           background: rgb(245, 243, 243);
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+           place-items: center;
+            height: 100%;
+            width: 100%;
+            margin:0;
+            padding:0;
+
+            img{
+                width:100%;
+              
+              
+             
+            }
+            .text{
+             
+               margin:0 7rem;
+               
+                h1{
+                    font-size:3.5rem;
+                    color:$Verydarkdesaturatedblue;
+                    font-weight: bold;
+                
+                }
+                p{
+                    margin:2rem 0;
+                    line-height: 1.5;
+                    color:$Darkblue;
+                }
+                a{
+                    color:$Verydarkdesaturatedblue;
+                    text-decoration: none;
+                    box-shadow: 0 5px 0px rgba(233, 152, 152, 0.5);
+                    font-weight: bold;
+                    border-radius: 3px;
+                }
+            }
+            
+        }
+   
+    }
+    .about-section{
+        
+        display: flex;
+        text-align: center;
+        
+      
+        .Grahpic{
+            .text{
+                h1{
+                    color:hsl(167, 40%, 24%);
+                }
+            }
+        
+        }
+         
+        .photographers{
+            .text{
+                h1{
+                    color:hsl(198, 62%, 26%);
+                }
+            }
+        
+        }
+        
+        .text{
+           margin:0 2rem 1rem;
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            align-items: center;
+         
+            
+            
+            
+            h1{
+                font-size:3rem;
+             
+                font-weight: bold;
+                
+                
+          
+            
+            }
+            p{
+                margin:2rem 0;
+                line-height: 1.5;
+               
+
+                color:$Darkblue;
+            }
+       
+        }
+       .Grahpic{
+           background: url('/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg') no-repeat center center /cover    ;
+           height: 70vh;
+       }
+       .photographers{
+        background: url('/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg')  no-repeat center center /cover ;
+        height: 70vh;
+    }
+        
+    }
+    .testimonials{
+        padding:5rem;
+        background: rgb(245, 243, 243);
+        h1{
+            text-align: center;
+            letter-spacing: 5px;
+            color:$Grayishblue;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            grid-gap:1rem;
+            .user{
+                text-align: center;
+                .user-img{
+                    img{
+                        width:80px;
+                        height:80px;
+                        border-radius: 50%;
+                    }
+                 
+                }
+                p{
+                    margin:2rem;
+                    line-height: 2;
+                    color:    $Verydarkgrayishblue;
+                    font-weight: bold;
+                    font-family: $fontFrauncesFamily,sans-serif;
+                }
+            }
+            .user-info{
+                h3{
+                    color: #23303e;
+                    font-weight: bolder;
+                    margin-bottom:1rem;
+                }
+                .role{
+                    color: $Grayishblue;
+                    font-weight: bold;
+                }
+            }
+        
+        }
+    }
+    .products{
+        width: 100%;
+      
+        .container{
+            background: green;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            img{
+                object-fit: cover;
+                max-width: 100%;
+            }
+        }
+    }
+    footer{
+        background:$Darkmoderatecyan;
+        padding:3rem;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1{
+                color:$Darkdesaturatedcyan;
+                font-family: $fontFrauncesFamily,sans-serif;
+                font-weight: bold;
+            }
+            .footer-nav{
+              
+                li{
+                    margin:2rem;
+                    a{
+                        text-decoration: none;
+                        color:$Darkdesaturatedcyan;
+                    }
+                }
+            }
+            .social-links{
+                li{
+                    margin:2rem 1rem;  
+                }
+             
+            }
+
+            ul{
+                list-style-type: none;
+                display: flex;
+            }
+        }
+
+    }
+ }
+
+ @media(max-width:960px){
+    .products{
+        .container{
+            grid-template-columns: repeat(2,1fr) !important;
+        }
+    }
+    #About{
+        h1{
+            font-size:2rem;
+        }
+    }
+    .testimonials{
+        padding:1rem 0 !important;
+        .container{
+            grid-template-columns: repeat(1,1fr) !important;
+        }
+        h1{
+            font-size:1rem;
+        }
+    }
+    .about-section{
+        flex-wrap: wrap;
+        .text{
+            margin:0 0.5rem 1rem !important;
+        }
+    }
+   .row{
+       grid-template-columns: repeat(1,1fr) !important;
+       .text{
+           padding: 1.5rem !important;
+           margin: 0 !important;
+           text-align: center;
+       }
+   }
+   .row:nth-of-type(1){
+       img{
+           order:1;
+       }
+       .text{
+           order:2;
+       }
+   }
+     body.toggle{
+         overflow:hidden !important;
+     }
+ .mobile-version{
+     
+   
+     .navbar-nav{
+  
+        position:absolute;
+        top:10rem;
+        left:50%;
+        transition: all 0.7s;
+        transform: translateX(-400%);
+        opacity: 0;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         background:white;
+        padding:2rem 6rem;
+         .nav-item{
+             margin:1rem 0 !important;
+    
+             
+             
+            .nav-link{
+                color:$Darkgrayishblue !important;
+                font-weight: bold;
+        
+            }
+            .nav-link.active{
+                background:$Yellow !important;
+                padding:1rem 1.5rem; 
+                border-radius: 30px;
+                font-size: 16px;
+                font-family: $fontbarlowFamily;
+                font-weight: $fontFrauncesWeights;
+                color:#000 !important;
+                text-transform: uppercase;
+                z-index: 1;
+            }
+        }
+     }
+     .navbar-nav.toggle{
+         transform: translateX(-50%);
+        opacity: 1;
+         .nav-item:nth-of-type(1){
+            animation: slide1 1.2s linear;
+            animation-delay: 0s;
+         }
+         .nav-item:nth-of-type(2){
+            animation: slide2 1.2s linear;
+            animation-delay: 100ms;
+         }
+         .nav-item:nth-of-type(3){
+            animation: slide3 1.2s linear ;
+            animation-delay: 200ms;
+         }
+         .nav-item:nth-of-type(4){
+            animation: slide4 1.2s linear ;
+            animation-delay: 300ms;
+         }
+     }
+     .navbar-nav::before{
+         content: '';
+         padding:1rem;
+         position:absolute;
+         
+         top:0;
+         right:0;
+         transform: translateY(-100%);
+         background:linear-gradient(to bottom right,transparent 50%,white 50%);
+     }
+     .navbar-toggler{
+         display: block !important;
+     }
+
+ }
+}
+@media(max-width:380px){
+    .about-section{
+        flex-wrap: wrap;
+        .text{
+            h1{
+                font-size:2rem !important;
+            }
+            margin:0 !important;
+            padding: 0 !important;
+        }
+    }
+}
+@keyframes slide1{
+
+    0%{
+        transform: translateX(-800%);
+    }
+    50%{
+        transform: translateX(70%);
+    }
+    75%{transform: translateX(65%);}
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+@keyframes slide2{
+
+    0%{
+        transform: translateX(-800%);
+    }
+    50%{
+        transform: translateX(60%);
+    }
+    75%{transform: translateX(55%);}
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+@keyframes slide3{
+
+    0%{
+        transform: translateX(-800%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    75%{transform: translateX(45%);}
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+@keyframes slide4{
+
+    0%{
+        transform: translateX(-800%);
+    }
+    50%{
+        transform: translateX(30%);
+    }
+    75%{transform: translateX(25%);}
+    100%{
+        transform: translateX(0%);
+    }
+
+}
